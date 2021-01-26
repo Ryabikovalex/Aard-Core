@@ -16,8 +16,8 @@
           "category" : "Contributed",
           "url" : "https://github.com/Ryabikovalex/Aard-Core/releases/download/v0.1.0-alpha/0.1.0.zip",
           "archiveFileName": "0.1.0.zip",
-          "checksum": "MD5:1e61d6940115342f22c9fec7fa4093bf",
-          "size": "53549",
+          "checksum": "MD5:9c91c03c091a63e89b2855e33bcdfd39",
+          "size": "54497",
           "boards": [
             {"name": "ATMega88"},
             {"name": "ATMega168"},

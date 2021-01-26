@@ -1,9 +1,10 @@
 # See: http://code.google.com/p/arduino/wiki/Platforms
 menu.cpu=Type
 
-## Arduino with ATMega328(P) (Uno, Nano, Mini)
+## Arduino with ATMega328 (Uno, Nano, Mini)
 ## --------------------------
-atmega328.name=ATMega328(P)
+atmega328.name=ATMega328 (Uno, Nano)
+
 atmega328.upload.tool=avrdude
 atmega328.upload.protocol=arduino
 
@@ -11,37 +12,93 @@ atmega328.bootloader.tool=avrdude
 atmega328.bootloader.unlock_bits=0x3F
 atmega328.bootloader.lock_bits=0x0F
 
-atmega328.build.f_cpu=16000000L
-atmega328.build.board=AVR_NANO
+atmega328.build.mcu=atmega328p
 atmega328.build.core=arduino
-atmega328.build.variant=eightanaloginputs
 
-## Standart
+## Standard
 ## --------------------------
-atmega328.menu.cpu.atmega328=Standard
+atmega328.menu.cpu.standard=Standard (5V, 16MHz)
 
-atmega328.menu.cpu.atmega328.upload.maximum_size=30720
-atmega328.menu.cpu.atmega328.upload.maximum_data_size=2048
-atmega328.menu.cpu.atmega328.upload.speed=115200
+atmega328.menu.cpu.standard.build.f_cpu=16000000L
+atmega328.menu.cpu.standard.upload.maximum_size=30720
+atmega328.menu.cpu.standard.upload.maximum_data_size=2048
+atmega328.menu.cpu.standard.upload.speed=115200
 
-atmega328.menu.cpu.atmega328.bootloader.low_fuses=0xFF
-atmega328.menu.cpu.atmega328.bootloader.high_fuses=0xDA
-atmega328.menu.cpu.atmega328.bootloader.extended_fuses=0xFD
-atmega328.menu.cpu.atmega328.bootloader.file=optiboot/optiboot_atmega328.hex
+atmega328.menu.cpu.standard.bootloader.low_fuses=0xFF
+atmega328.menu.cpu.standard.bootloader.high_fuses=0xDA
+atmega328.menu.cpu.standard.bootloader.extended_fuses=0xFD
+atmega328.menu.cpu.standard.bootloader.file=optiboot/optiboot_atmega328.hex
 
-atmega328.menu.cpu.atmega328.build.mcu=atmega328p
+## Standard (3.3V, 8MHz)
+## --------------------------
+atmega328.menu.cpu.standard=Standard (3.3V, 8MHz)
+
+atmega328.menu.cpu.standard.build.f_cpu=8000000L
+
+atmega328.menu.cpu.standard.upload.maximum_size=30720
+atmega328.menu.cpu.standard.upload.maximum_data_size=2048
+atmega328.menu.cpu.standard.upload.speed=57600
+
+atmega328.menu.cpu.standard.bootloader.low_fuses=0xFF
+atmega328.menu.cpu.standard.bootloader.high_fuses=0xDA
+atmega328.menu.cpu.standard.bootloader.extended_fuses=0xFD
+atmega328.menu.cpu.standard.bootloader.file=atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex
+
 
 ## Old bootloader
 ## --------------------------
-atmega328.menu.cpu.atmega328old=Old bootloader
+atmega328.menu.cpu.oldstandard=Old bootloader (5V, 16MHz)
 
-atmega328.menu.cpu.atmega328old.upload.maximum_size=30720
-atmega328.menu.cpu.atmega328old.upload.maximum_data_size=2048
-atmega328.menu.cpu.atmega328old.upload.speed=57600
+atmega328.menu.cpu.oldstandard.build.f_cpu=16000000L
 
-atmega328.menu.cpu.atmega328old.bootloader.low_fuses=0xFF
-atmega328.menu.cpu.atmega328old.bootloader.high_fuses=0xDA
-atmega328.menu.cpu.atmega328old.bootloader.extended_fuses=0xFD
-atmega328.menu.cpu.atmega328old.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+atmega328.menu.cpu.oldstandard.upload.maximum_size=30720
+atmega328.menu.cpu.oldstandard.upload.maximum_data_size=2048
+atmega328.menu.cpu.oldstandard.upload.speed=57600
 
-atmega328.menu.cpu.atmega328old.build.mcu=atmega328p
+atmega328.menu.cpu.oldstandard.bootloader.low_fuses=0xFF
+atmega328.menu.cpu.oldstandard.bootloader.high_fuses=0xDA
+atmega328.menu.cpu.oldstandard.bootloader.extended_fuses=0xFD
+atmega328.menu.cpu.oldstandard.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+
+## Arduino with ATMega168 (Nano, Mini)
+## --------------------------
+atmega168.name=ATMega168
+
+atmega168.upload.tool=avrdude
+atmega168.upload.protocol=arduino
+
+atmega168.bootloader.tool=avrdude
+atmega168.bootloader.unlock_bits=0x3F
+atmega168.bootloader.lock_bits=0x0F
+
+atmega168.build.mcu=atmega168
+atmega168.build.core=arduino
+
+## Standard
+## --------------------------
+atmega168.menu.cpu.standard=Standard
+
+atmega168.menu.cpu.standard.build.f_cpu=16000000L
+atmega168.menu.cpu.standard.upload.maximum_size=14336
+atmega168.menu.cpu.standard.upload.maximum_data_size=1024
+atmega168.menu.cpu.standard.upload.speed=19200
+
+atmega168.menu.cpu.standard.bootloader.low_fuses=0xFF
+atmega168.menu.cpu.standard.bootloader.high_fuses=0xDD
+atmega168.menu.cpu.standard.bootloader.extended_fuses=0xF8
+atmega168.menu.cpu.standard.bootloader.file=optiboot/optiboot_atmega168.hex
+
+## Standard (3.3V, 8MHz)
+## --------------------------
+atmega328.menu.cpu.standard=Standard (3.3V, 8MHz)
+
+atmega328.menu.cpu.standard.build.f_cpu=8000000L
+
+atmega328.menu.cpu.standard.upload.maximum_size=14336
+atmega328.menu.cpu.standard.upload.maximum_data_size=1024
+atmega328.menu.cpu.standard.upload.speed=19200
+
+atmega328.menu.cpu.standard.bootloader.low_fuses=0xC6
+atmega328.menu.cpu.standard.bootloader.high_fuses=0xDD
+atmega328.menu.cpu.standard.bootloader.extended_fuses=0xF8
+atmega328.menu.cpu.standard.bootloader.file=atmega/ATmegaBOOT_168_atmega328_pro_8MHz.hex

@@ -1,0 +1,32 @@
+{
+  "packages" : [
+    {
+      "name" : "Aard-Core",
+      "maintainer" : "Ryabikovalex",
+      "websiteURL" : "",
+      "email" : "",
+      "help" : {
+        "online" : "https://github.com/Ryabikovalex/Aard-Core"
+      },
+      "platforms" : [
+        {
+          "name" : "Aard-Core",
+          "architecture" : "avr",
+          "version" : "0.1.0",
+          "category" : "Contributed",
+          "url" : "",
+          "archiveFileName": "",
+          "checksum": "",
+          "size": "",
+          "boards": [
+            {"name": "ATMega88"},
+            {"name": "ATMega168"},
+            {"name": "ATMega328"},
+            {"name": "ATMega2560"}
+          ],
+          "toolsDependencies" : []
+        }
+      ]
+    }
+  ]
+}

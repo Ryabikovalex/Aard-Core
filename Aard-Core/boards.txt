@@ -1,0 +1,47 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+menu.cpu=Type
+
+## Arduino with ATMega328(P) (Uno, Nano, Mini)
+## --------------------------
+atmega328.name=ATMega328(P)
+atmega328.upload.tool=avrdude
+atmega328.upload.protocol=arduino
+
+atmega328.bootloader.tool=avrdude
+atmega328.bootloader.unlock_bits=0x3F
+atmega328.bootloader.lock_bits=0x0F
+
+atmega328.build.f_cpu=16000000L
+atmega328.build.board=AVR_NANO
+atmega328.build.core=arduino
+atmega328.build.variant=eightanaloginputs
+
+## Standart
+## --------------------------
+atmega328.menu.cpu.atmega328=Standard
+
+atmega328.menu.cpu.atmega328.upload.maximum_size=30720
+atmega328.menu.cpu.atmega328.upload.maximum_data_size=2048
+atmega328.menu.cpu.atmega328.upload.speed=115200
+
+atmega328.menu.cpu.atmega328.bootloader.low_fuses=0xFF
+atmega328.menu.cpu.atmega328.bootloader.high_fuses=0xDA
+atmega328.menu.cpu.atmega328.bootloader.extended_fuses=0xFD
+atmega328.menu.cpu.atmega328.bootloader.file=optiboot/optiboot_atmega328.hex
+
+atmega328.menu.cpu.atmega328.build.mcu=atmega328p
+
+## Old bootloader
+## --------------------------
+atmega328.menu.cpu.atmega328old=Old bootloader
+
+atmega328.menu.cpu.atmega328old.upload.maximum_size=30720
+atmega328.menu.cpu.atmega328old.upload.maximum_data_size=2048
+atmega328.menu.cpu.atmega328old.upload.speed=57600
+
+atmega328.menu.cpu.atmega328old.bootloader.low_fuses=0xFF
+atmega328.menu.cpu.atmega328old.bootloader.high_fuses=0xDA
+atmega328.menu.cpu.atmega328old.bootloader.extended_fuses=0xFD
+atmega328.menu.cpu.atmega328old.bootloader.file=atmega/ATmegaBOOT_168_atmega328.hex
+
+atmega328.menu.cpu.atmega328old.build.mcu=atmega328p
